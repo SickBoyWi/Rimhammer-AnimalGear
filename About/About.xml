@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rimhammer - Animal Gear</name>
+	<author>SickBoyWi</author>
+	<url/>
+	<description>This mod makes use of the Animal Gear and the Rimhammer - The End Times mods series./n/nThe purpose of this mod is to add themed animal apparel to accompany the Rimhammer - The End Times mods. 
+	
+	Rimhammer - The End Times - Empire:
+	This mod currently adds two types of horse gear to the game themed to the Empire of Man from the Warhammer world: Horse Plate Armor (as used by the Knightly Orders), and Horse Leather Saddle and Tack as used by Outriders and Pisoleers.
+	
+	The horse that these armors work with is the Empire War Horse that is added by the Rimhammer Empire mod.</description>
+	<packageId>sickboywi.rimhammer.animalgear</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Dylan.AnimalGear</packageId>
+			<displayName>Animal Gear</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Owlchemist.GiddyUp</packageId>
+			<displayName>Giddy Up 2</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2934245647</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>SickBoyWi.TheEndTimes.Empire</packageId>
+			<displayName>Rimhammer - The End Times - Empire</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2374143623</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.BioTech</li>
+		<li>Owlchemist.GiddyUp</li>
+		<li>Dylan.AnimalGear</li>
+		<li>SickBoyWi.TheEndTimes.Empire</li>
+	</loadAfter>
+</ModMetaData>
