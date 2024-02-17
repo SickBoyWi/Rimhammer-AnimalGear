@@ -8,8 +8,10 @@
 		<description>Leather barding and tack, with a pack for gear. Used by Empire Outriders and Pistoleers for their mounts whe they ride into battle.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<researchPrerequisite>RH_TET_Empire_Armor_Low</researchPrerequisite>
 			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
+				<li>RH_TET_Empire_HandTailoringBench</li>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
@@ -65,9 +67,10 @@
 		<description>Metal plate armor made in the style of the Empire of Man, intended to be worn by Empire Warhorses. Worn by the mounts of Knights of the various Knightly Orders.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
 				<li>ElectricSmithy</li>
 				<li>FueledSmithy</li>
 			</recipeUsers>
