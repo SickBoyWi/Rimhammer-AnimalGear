@@ -8,7 +8,7 @@
 		<description>Leather barding and tack, with a pack for gear. Used by Empire Outriders and Pistoleers for their mounts whe they ride into battle.</description>
 		<techLevel>Medieval</techLevel>
 		<recipeMaker>
-			<researchPrerequisite>RH_TET_Empire_Armor_Low</researchPrerequisite>
+			<researchPrerequisite>RH_TET_Empire_Armor_Basic</researchPrerequisite>
 			<recipeUsers>
 				<li>RH_TET_TableSmithy</li>
 				<li>RH_TET_Empire_HandTailoringBench</li>
