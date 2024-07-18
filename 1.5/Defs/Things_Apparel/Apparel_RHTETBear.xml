@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<!-- Base Bear Plate -->
+	<ThingDef Name="RH_TETE_Apparel_Bear_PlateBase" Abstract="true" ParentName="ApparelMakeableBase">
+		<description>Metal plate armor made in the style of the province of Kislev of the Empire of Man, intended to be worn by Great and Ice bears. Only affordable to royalty, this armor makes a power and intimidating animal even more scary.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount>165</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>23500</WorkToMake>
+			<MaxHitPoints>310</MaxHitPoints>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>.5</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.25</Flammability>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Animal_Apparel</li>
+			<!--<li>RH_TET_Empire_Bear_Apparel</li>-->
+		</thingCategories>
+		<generateAllowChance>0</generateAllowChance>
+	</ThingDef>
+
+	<!-- Front Bear Plate -->
+	<ThingDef ParentName="RH_TETE_Apparel_Bear_PlateBase">
+		<defName>RH_TETE_Apparel_Bear_PlateFront</defName>
+		<label>Empire bear plate armor front</label>
+		<graphicData>
+			<texPath>Things/Items/Apparel/Bear/RH_TET_BearPlateFront</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/Bear/RH_TET_BearPlateFront</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Animal</li>
+				<li>AnimalCUTOUTCOMPLEX</li>
+				<li>AnimalDrawOverGiddyUpOverlay</li>
+				<li>RH_TET_Bear_Great</li>
+				<li>RH_TET_Bear_Ice</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!-- Back Bear Plate -->
+	<ThingDef ParentName="RH_TETE_Apparel_Bear_PlateBase">
+		<defName>RH_TETE_Apparel_Bear_Plateback</defName>
+		<label>Empire bear plate armor back</label>
+		<graphicData>
+			<texPath>Things/Items/Apparel/Bear/RH_TET_BearPlateBack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>FrontRightLeg</li>
+				<li>FrontLeftLeg</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/Bear/RH_TET_BearPlateBack</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Animal</li>
+				<li>AnimalCUTOUTCOMPLEX</li>
+				<li>RH_TET_Bear_Great</li>
+				<li>RH_TET_Bear_Ice</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+</Defs>

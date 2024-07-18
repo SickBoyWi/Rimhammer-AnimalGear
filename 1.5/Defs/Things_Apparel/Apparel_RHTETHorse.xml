@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Horse Leather Armor -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>RH_TETE_Apparel_Horse_LeatherGear</defName>
+		<label>Empire warhorse outrider gear</label>
+		<description>Leather barding and tack, with a pack for gear. Used by Empire Outriders and Pistoleers for their mounts when they ride into battle.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Basic</researchPrerequisite>
+			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
+				<li>RH_TET_Empire_HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Apparel/Horse/OutriderGear/RH_TET_HorsePack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Mass>4</Mass>
+			<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.65</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>6</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.04</MoveSpeed>
+		</equippedStatOffsets>
+		<costStuffCount>145</costStuffCount>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Animal_Apparel</li>
+			<!--<li>RH_TET_Empire_Horse_Apparel</li>-->
+		</thingCategories>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Torso</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/Horse/OutriderGear/RH_TET_HorsePack</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Animal</li>
+				<li>AnimalCUTOUTCOMPLEX</li>
+				<li>RH_TET_Horse</li>
+			</tags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+  
+	<!-- Base Horse Plate -->
+	<ThingDef Name="RH_TETE_Apparel_Horse_PlateBase" Abstract="true" ParentName="ApparelMakeableBase">
+		<description>Metal plate armor made in the style of the Empire of Man, intended to be worn by Empire Warhorses. Worn by the mounts of Knights of the various Knightly Orders.</description>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>RH_TET_Empire_Armor_Advanced</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<recipeUsers>
+				<li>RH_TET_TableSmithy</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount>155</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>23000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>15</Mass>
+			<StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>.5</StuffEffectMultiplierInsulation_Heat>
+			<Flammability>0.25</Flammability>
+			<EquipDelay>8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>Animal_Apparel</li>
+			<!--<li>RH_TET_Empire_Horse_Apparel</li>-->
+		</thingCategories>
+		<generateAllowChance>0</generateAllowChance>
+	</ThingDef>
+
+	<!-- Front Horse Plate -->
+	<ThingDef ParentName="RH_TETE_Apparel_Horse_PlateBase">
+		<defName>RH_TETE_Apparel_Horse_PlateFront</defName>
+		<label>Empire warhorse plate armor front</label>
+		<graphicData>
+			<texPath>Things/Items/Apparel/Horse/PlateArmor/RH_TET_HorsePlateFront</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/Horse/PlateArmor/RH_TET_HorsePlateFront</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Animal</li>
+				<li>AnimalCUTOUTCOMPLEX</li>
+				<li>AnimalDrawOverGiddyUpOverlay</li>
+				<li>RH_TET_Horse</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!-- Back Horse Plate -->
+	<ThingDef ParentName="RH_TETE_Apparel_Horse_PlateBase">
+		<defName>RH_TETE_Apparel_Horse_Plateback</defName>
+		<label>Empire warhorse plate armor back</label>
+		<graphicData>
+			<texPath>Things/Items/Apparel/Horse/PlateArmor/RH_TET_HorsePlateBack</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<bodyPartGroups>
+				<li>Arms</li>
+				<li>Legs</li>
+				<li>FrontRightLeg</li>
+				<li>FrontLeftLeg</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/Horse/PlateArmor/RH_TET_HorsePlateBack</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>Animal</li>
+				<li>AnimalCUTOUTCOMPLEX</li>
+				<li>RH_TET_Horse</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+</Defs>
