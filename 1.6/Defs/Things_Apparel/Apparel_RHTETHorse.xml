@@ -47,7 +47,7 @@
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
-				<li>Torso</li>
+				<li>AnimalBody</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Apparel/Horse/OutriderGear/RH_TET_HorsePack</wornGraphicPath>
 			<layers>
@@ -55,11 +55,17 @@
 			</layers>
 			<tags>
 				<li>Animal</li>
+				<li>AnimalApparel</li>
 				<li>AnimalCUTOUTCOMPLEX</li>
-				<li>RH_TET_Horse</li>
+				<li>defNameRH_TET_Horse</li>
 			</tags>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+		<modExtensions>
+			<li Class="AnimalGear.AnimalApparelDefExtension">
+				<showCoverageForBodyType>QuadrupedAnimalWithHooves</showCoverageForBodyType>
+			</li>
+		</modExtensions>
 	</ThingDef>
   
 	<!-- Base Horse Plate -->
@@ -111,9 +117,9 @@
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
-				<li>Torso</li>
+				<li>AnimalBody</li>
 				<li>Neck</li>
-				<li>FullHead</li>
+				<li>AnimalHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Apparel/Horse/PlateArmor/RH_TET_HorsePlateFront</wornGraphicPath>
 			<layers>
@@ -121,14 +127,20 @@
 			</layers>
 			<tags>
 				<li>Animal</li>
+				<li>AnimalApparel</li>
 				<li>AnimalCUTOUTCOMPLEX</li>
 				<li>AnimalDrawOverGiddyUpOverlay</li>
-				<li>RH_TET_Horse</li>
+				<li>defNameRH_TET_Horse</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<modExtensions>
+			<li Class="AnimalGear.AnimalApparelDefExtension">
+				<showCoverageForBodyType>QuadrupedAnimalWithHooves</showCoverageForBodyType>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- Back Horse Plate -->
@@ -143,8 +155,7 @@
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
-				<li>Arms</li>
-				<li>Legs</li>
+				<li>AnimalLegs</li>
 				<li>FrontRightLeg</li>
 				<li>FrontLeftLeg</li>
 			</bodyPartGroups>
@@ -154,13 +165,19 @@
 			</layers>
 			<tags>
 				<li>Animal</li>
+				<li>AnimalApparel</li>
 				<li>AnimalCUTOUTCOMPLEX</li>
-				<li>RH_TET_Horse</li>
+				<li>defNameRH_TET_Horse</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<modExtensions>
+			<li Class="AnimalGear.AnimalApparelDefExtension">
+				<showCoverageForBodyType>QuadrupedAnimalWithHooves</showCoverageForBodyType>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>

@@ -50,9 +50,9 @@
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
-				<li>Torso</li>
+				<li>AnimalBody</li>
 				<li>Neck</li>
-				<li>FullHead</li>
+				<li>AnimalHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Apparel/Bear/RH_TET_BearPlateFront</wornGraphicPath>
 			<layers>
@@ -60,15 +60,21 @@
 			</layers>
 			<tags>
 				<li>Animal</li>
+				<li>AnimalApparel</li>
 				<li>AnimalCUTOUTCOMPLEX</li>
 				<li>AnimalDrawOverGiddyUpOverlay</li>
-				<li>RH_TET_Bear_Great</li>
-				<li>RH_TET_Bear_Ice</li>
+				<li>defNameRH_TET_Bear_Great</li>
+				<li>defNameRH_TET_Bear_Ice</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<modExtensions>
+			<li Class="AnimalGear.AnimalApparelDefExtension">
+				<showCoverageForBodyType>QuadrupedAnimalWithPaws</showCoverageForBodyType>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<!-- Back Bear Plate -->
@@ -83,10 +89,9 @@
 		<apparel>
 			<careIfWornByCorpse>false</careIfWornByCorpse>
 			<bodyPartGroups>
-				<li>Arms</li>
-				<li>Legs</li>
-				<li>FrontRightLeg</li>
-				<li>FrontLeftLeg</li>
+				<li>AnimalLegs</li>
+				<li>FrontRightPaw</li>
+				<li>FrontLeftPaw</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Items/Apparel/Bear/RH_TET_BearPlateBack</wornGraphicPath>
 			<layers>
@@ -94,14 +99,20 @@
 			</layers>
 			<tags>
 				<li>Animal</li>
+				<li>AnimalApparel</li>
 				<li>AnimalCUTOUTCOMPLEX</li>
-				<li>RH_TET_Bear_Great</li>
-				<li>RH_TET_Bear_Ice</li>
+				<li>defNameRH_TET_Bear_Great</li>
+				<li>defNameRH_TET_Bear_Ice</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		<modExtensions>
+			<li Class="AnimalGear.AnimalApparelDefExtension">
+				<showCoverageForBodyType>QuadrupedAnimalWithPaws</showCoverageForBodyType>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>

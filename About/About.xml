@@ -13,8 +13,7 @@
 	This mod also adds armor for the Great and Ice bears from the Rimhammer Empire mod.</description>
 	<packageId>sickboywi.rimhammer.animalgear</packageId>
 	<supportedVersions>
-		<li>1.4</li>
-		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<modDependencies>
 		<li>
@@ -24,9 +23,9 @@
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
 		</li>
 		<li>
-			<packageId>Dylan.AnimalGear</packageId>
-			<displayName>Animal Gear</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907</steamWorkshopUrl>
+			<packageId>Ingendum.AnimalApparelFramework</packageId>
+			<displayName>Animal Apparel: Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3513825850</steamWorkshopUrl>
 		</li>
 		<li>
 			<packageId>Owlchemist.GiddyUp</packageId>
